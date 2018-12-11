@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02368656-8b0a-4283-a0ba-e28ef8aa06bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/var.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/3.go语言结构体/3.1结构体/basic.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.初识go语言/1.1语言介绍.md" afterPath="$PROJECT_DIR$/1.初识go语言/1.1语言介绍.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.go语言基础类型/2.1基本类型/basic.md" afterPath="$PROJECT_DIR$/2.go语言基础类型/2.1基本类型/basic.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4.go语言函数/basic.md" afterPath="$PROJECT_DIR$/4.go语言函数/basic.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SUMMARY.md" afterPath="$PROJECT_DIR$/SUMMARY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" afterPath="$PROJECT_DIR$/_book/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_book/index.html" afterPath="$PROJECT_DIR$/_book/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,25 +25,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SUMMARY.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SUMMARY.md">
+      <file leaf-file-name="basic.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/6.go语言异常/basic.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="302">
-                <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="16" />
+              <first_editor relative-caret-position="152">
+                <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -51,11 +39,11 @@
         </entry>
       </file>
       <file leaf-file-name="basic.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.go语言基础类型/2.1基本类型/basic.md">
+        <entry file="file://$PROJECT_DIR$/10.go语言测试/basic.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -63,12 +51,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basic.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3.go语言结构体/3.1结构体/basic.md">
+      <file leaf-file-name="3.1结构体.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.go语言结构体/3.1结构体.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+              <first_editor relative-caret-position="317">
+                <caret line="108" column="3" lean-forward="false" selection-start-line="108" selection-start-column="3" selection-end-line="108" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -76,12 +64,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.1语言介绍.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.初识go语言/1.1语言介绍.md">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -90,6 +78,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>s1 == s2</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,8 +107,15 @@
         <option value="$PROJECT_DIR$/2.go语言基础类型/2.1基本类型/basic.md" />
         <option value="$PROJECT_DIR$/3.go语言面向对象/3.1面向对象/basic.md" />
         <option value="$PROJECT_DIR$/1.初识go语言/1.1语言介绍.md" />
-        <option value="$PROJECT_DIR$/SUMMARY.md" />
         <option value="$PROJECT_DIR$/3.go语言结构体/3.1结构体/basic.md" />
+        <option value="$PROJECT_DIR$/3.go语言结构体/3.1结构体.md" />
+        <option value="$PROJECT_DIR$/5.go语言接口/5.2_duck_typing.md" />
+        <option value="$PROJECT_DIR$/5.go语言接口/basic.md" />
+        <option value="$PROJECT_DIR$/3.go语言结构体/3.2封装-包.md" />
+        <option value="$PROJECT_DIR$/4.go语言函数/basic.md" />
+        <option value="$PROJECT_DIR$/SUMMARY.md" />
+        <option value="$PROJECT_DIR$/6.go语言异常/basic.md" />
+        <option value="$PROJECT_DIR$/10.go语言测试/basic.md" />
       </list>
     </option>
   </component>
@@ -126,8 +126,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="534" />
-    <option name="y" value="127" />
+    <option name="x" value="404" />
+    <option name="y" value="61" />
     <option name="width" value="1453" />
     <option name="height" value="827" />
   </component>
@@ -169,11 +169,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3.go语言结构体" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3.1结构体" />
+              <option name="myItemId" value="10.go语言测试" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -187,7 +183,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1.初识go语言" />
+              <option name="myItemId" value="6.go语言异常" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go语言" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go语言" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3.go语言结构体" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,18 +285,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544410364307</updated>
-      <workItem from="1544410365648" duration="10186000" />
+      <workItem from="1544410365648" duration="19716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10186000" />
+    <option name="totallyTimeSpent" value="19716000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="534" y="127" width="1453" height="827" extended-state="0" />
-    <editor active="true" />
+    <frame x="404" y="61" width="1453" height="827" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -342,17 +352,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.初识go语言/1.3知识点思维导图.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
             <folding />
           </first_editor>
           <second_editor />
@@ -543,17 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="16" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1.初识go语言/1.1语言介绍.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -565,22 +553,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SUMMARY.md">
+    <entry file="file://$PROJECT_DIR$/3.go语言结构体/3.1结构体/basic.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="302">
-            <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <first_editor relative-caret-position="1200">
+            <caret line="80" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="80" selection-end-column="34" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.go语言结构体/3.1结构体/basic.md">
+    <entry file="file://$PROJECT_DIR$/3.go语言结构体/3.2封装-包.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5.go语言接口/5.2_duck_typing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5.go语言接口/basic.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-688">
+            <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.初识go语言/1.3知识点思维导图.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/go函数闭包.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.go语言函数/basic.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="392">
+            <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SUMMARY.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="332">
+            <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.go语言异常/basic.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="152">
+            <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10.go语言测试/basic.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.go语言结构体/3.1结构体.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="317">
+            <caret line="108" column="3" lean-forward="false" selection-start-line="108" selection-start-column="3" selection-end-line="108" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
