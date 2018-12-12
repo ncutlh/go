@@ -20,3 +20,12 @@
     		}
     	}
     }
+    
+## 工具 
+### 覆盖测试 go tool cover -html=c.out
+### 性能测试 go test -bench .
+### 性能优化 go test -bench . -cpuprofilecpu.out
+      go tool pprof cpu.out 
+      输入： 
+         web
+     需要安装工具
