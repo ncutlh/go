@@ -30,6 +30,7 @@
 * [7.go语言并发编程](7.go语言并发编程/basic.md)
     * [7.1_goroutine](7.go语言并发编程/7.1_goroutine.md)
     * [7.2_channel](7.go语言并发编程/7.2_channel.md)
+    * [7.3_go-disruptor](7.go语言并发编程/7.3_go-disruptor.md)
 * [8.go语言网络概述、socket编程](8.go语言网络概述、socket编程/basic.md)
 * [9.go语言HTTP编程](9.go语言HTTP编程/basic.md)
 * [10.go语言测试](10.go语言测试/basic.md)

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.2环境安装 · GitBook</title>
+        <title>6.go语言异常 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1.3知识点思维导图.html" />
+    <link rel="next" href="../7.go语言并发编程/basic.html" />
     
     
-    <link rel="prev" href="1.1语言介绍.html" />
+    <link rel="prev" href="../5.go语言接口/basic.html" />
     
 
     </head>
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="1.1语言介绍.html">
+        <li class="chapter " data-level="1.2.1" data-path="../1.初识go语言/1.1语言介绍.html">
             
-                <a href="1.1语言介绍.html">
+                <a href="../1.初识go语言/1.1语言介绍.html">
             
                     
                     1.1语言介绍
@@ -129,9 +129,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="1.2环境安装.html">
+        <li class="chapter " data-level="1.2.2" data-path="../1.初识go语言/1.2环境安装.html">
             
-                <a href="1.2环境安装.html">
+                <a href="../1.初识go语言/1.2环境安装.html">
             
                     
                     1.2环境安装
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="1.3知识点思维导图.html">
+        <li class="chapter " data-level="1.2.3" data-path="../1.初识go语言/1.3知识点思维导图.html">
             
-                <a href="1.3知识点思维导图.html">
+                <a href="../1.初识go语言/1.3知识点思维导图.html">
             
                     
                     1.3知识点思维导图
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="1.4学习资料.html">
+        <li class="chapter " data-level="1.2.4" data-path="../1.初识go语言/1.4学习资料.html">
             
-                <a href="1.4学习资料.html">
+                <a href="../1.初识go语言/1.4学习资料.html">
             
                     
                     1.4学习资料
@@ -475,9 +475,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../6.go语言异常/basic.html">
+        <li class="chapter active" data-level="1.7" data-path="basic.html">
             
-                <a href="../6.go语言异常/basic.html">
+                <a href="basic.html">
             
                     
                     6.go语言异常
@@ -602,7 +602,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >1.2环境安装</a>
+        <a href=".." >6.go语言异常</a>
     </h1>
 </div>
 
@@ -617,15 +617,69 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="12&#x73AF;&#x5883;&#x5B89;&#x88C5;">1.2&#x73AF;&#x5883;&#x5B89;&#x88C5;</h1>
+                                <h1 id="6go&#x8BED;&#x8A00;&#x5F02;&#x5E38;">6.go&#x8BED;&#x8A00;&#x5F02;&#x5E38;</h1>
+<h2 id="defer&#x8C03;&#x7528;">defer&#x8C03;&#x7528;</h2>
 <blockquote>
-<p>go:<a href="https://studygolang.com/dl" target="_blank">https://studygolang.com/dl</a></p>
-<p>ide&#x5DE5;&#x5177;&#x4E0B;&#x8F7D;GoLand&#xFF1A;<a href="https://www.jetbrains.com/go/download/download-thanks.html" target="_blank">https://www.jetbrains.com/go/download/download-thanks.html</a>
-&#x6FC0;&#x6D3B;&#x7801;&#xFF1A;<a href="https://blog.csdn.net/zhw0596/article/details/81394870" target="_blank">https://blog.csdn.net/zhw0596/article/details/81394870</a></p>
-<p>&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5E93; gopm&#x547D;&#x4EE4; &#x4E0B;&#x8F7D;google&#x65E0;&#x6CD5;&#x4E0B;&#x8F7D;&#x7684;&#x5305;:  <a href="https://gopm.io/" target="_blank">https://gopm.io/</a>
-&#x6D4B;&#x8BD5;&#x56FE;&#x5F62;&#x5316;&#x5DE5;&#x5177;&#xFF1A; <a href="https://www.graphviz.org/" target="_blank">https://www.graphviz.org/</a></p>
+<p>1&#x3001;&#x786E;&#x4FDD;&#x5728;&#x51FD;&#x6570;&#x7ED3;&#x675F;&#x65F6;&#x8C03;&#x7528;</p>
 </blockquote>
+<pre><code>func tryDefer1() {
+        defer fmt.Println(1)
+        defer fmt.Println(2)
+              fmt.Println(3)
+       return
+             fmt.Println(4)
+}
 
+
+func tryDefer1() {
+        defer fmt.Println(1)
+        defer fmt.Println(2)
+              fmt.Println(3)
+       panic(&quot;ssss&quot;)
+             fmt.Println(4)
+}
+</code></pre><blockquote>
+<p>2&#x3001;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x8C03;&#x7528;
+    Open/Close
+    Lock/Unlock
+    PrintHeader/PrintFooter</p>
+</blockquote>
+<h2 id="&#x670D;&#x52A1;&#x5668;&#x7EDF;&#x4E00;&#x51FA;&#x9519;&#x5904;&#x7406;">&#x670D;&#x52A1;&#x5668;&#x7EDF;&#x4E00;&#x51FA;&#x9519;&#x5904;&#x7406;</h2>
+<h2 id="panic&#x548C;recover">panic&#x548C;recover</h2>
+<blockquote>
+<p>1&#x3001;panic &#x505C;&#x6B62;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x6267;&#x884C;&#xFF1B;&#x4E00;&#x76F4;&#x5411;&#x4E0A;&#x8FD4;&#x56DE;&#xFF0C;&#x6267;&#x884C;&#x6BCF;&#x4E00;&#x5C42;&#x7684;defer&#xFF1B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x9047;&#x89C1;recover&#xFF0C;&#x7A0B;&#x5E8F;&#x9000;&#x51FA;
+2&#x3001;recover &#x4EC5;&#x5728;defer&#x8C03;&#x7528;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x83B7;&#x53D6;Panic&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x65E0;&#x6CD5;&#x5904;&#x7406;&#xFF0C;&#x53EF;&#x91CD;&#x65B0;Panic</p>
+</blockquote>
+<h2 id="&#x5373;&#x6253;&#x5370;&#x53C8;&#x8FD4;&#x56DE;&#x5F02;&#x5E38;">&#x5373;&#x6253;&#x5370;&#x53C8;&#x8FD4;&#x56DE;&#x5F02;&#x5E38;</h2>
+<pre><code>func testa() {
+    fmt.Println(&quot;aaaaaaaaaaaaaaaaa&quot;)
+}
+
+func testb(x int) {
+    //&#x8BBE;&#x7F6E;recover
+    defer func() {
+        //recover() //&#x53EF;&#x4EE5;&#x6253;&#x5370;panic&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;
+        //fmt.Println(recover())
+        if err := recover(); err != nil { //&#x4EA7;&#x751F;&#x4E86;panic&#x5F02;&#x5E38;
+            fmt.Println(err)
+        }
+
+    }() //&#x522B;&#x5FD8;&#x4E86;(), &#x8C03;&#x7528;&#x6B64;&#x533F;&#x540D;&#x51FD;&#x6570;
+
+    var a [10]int
+    a[x] = 111 //&#x5F53;x&#x4E3A;20&#x65F6;&#x5019;&#xFF0C;&#x5BFC;&#x81F4;&#x6570;&#x7EC4;&#x8D8A;&#x754C;&#xFF0C;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;panic&#xFF0C;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x5D29;&#x6E83;
+}
+
+func testc() {
+    fmt.Println(&quot;cccccccccccccccccc&quot;)
+}
+
+func main() {
+    testa()
+    testb(20)
+    testc()
+}
+</code></pre>
                                 
                                 </section>
                             
@@ -652,12 +706,12 @@
 
             
                 
-                <a href="1.1语言介绍.html" class="navigation navigation-prev " aria-label="Previous page: 1.1语言介绍">
+                <a href="../5.go语言接口/basic.html" class="navigation navigation-prev " aria-label="Previous page: 5.go语言接口">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="1.3知识点思维导图.html" class="navigation navigation-next " aria-label="Next page: 1.3知识点思维导图">
+                <a href="../7.go语言并发编程/basic.html" class="navigation navigation-next " aria-label="Next page: 7.go语言并发编程">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -668,7 +722,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2环境安装","level":"1.2.2","depth":2,"next":{"title":"1.3知识点思维导图","level":"1.2.3","depth":2,"path":"1.初识go语言/1.3知识点思维导图.md","ref":"1.初识go语言/1.3知识点思维导图.md","articles":[]},"previous":{"title":"1.1语言介绍","level":"1.2.1","depth":2,"path":"1.初识go语言/1.1语言介绍.md","ref":"1.初识go语言/1.1语言介绍.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1.初识go语言/1.2环境安装.md","mtime":"2018-12-11T09:04:40.290Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-19T09:09:12.673Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6.go语言异常","level":"1.7","depth":1,"next":{"title":"7.go语言并发编程","level":"1.8","depth":1,"path":"7.go语言并发编程/basic.md","ref":"7.go语言并发编程/basic.md","articles":[{"title":"7.1_goroutine","level":"1.8.1","depth":2,"path":"7.go语言并发编程/7.1_goroutine.md","ref":"7.go语言并发编程/7.1_goroutine.md","articles":[]},{"title":"7.2_channel","level":"1.8.2","depth":2,"path":"7.go语言并发编程/7.2_channel.md","ref":"7.go语言并发编程/7.2_channel.md","articles":[]}]},"previous":{"title":"5.go语言接口","level":"1.6","depth":1,"path":"5.go语言接口/basic.md","ref":"5.go语言接口/basic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6.go语言异常/basic.md","mtime":"2018-12-11T07:36:37.045Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-19T09:09:12.673Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

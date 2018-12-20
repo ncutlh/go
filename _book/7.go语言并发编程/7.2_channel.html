@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.2环境安装 · GitBook</title>
+        <title>7.2_channel · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1.3知识点思维导图.html" />
+    <link rel="next" href="../8.go语言网络概述、socket编程/basic.html" />
     
     
-    <link rel="prev" href="1.1语言介绍.html" />
+    <link rel="prev" href="7.1_goroutine.html" />
     
 
     </head>
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="1.1语言介绍.html">
+        <li class="chapter " data-level="1.2.1" data-path="../1.初识go语言/1.1语言介绍.html">
             
-                <a href="1.1语言介绍.html">
+                <a href="../1.初识go语言/1.1语言介绍.html">
             
                     
                     1.1语言介绍
@@ -129,9 +129,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="1.2环境安装.html">
+        <li class="chapter " data-level="1.2.2" data-path="../1.初识go语言/1.2环境安装.html">
             
-                <a href="1.2环境安装.html">
+                <a href="../1.初识go语言/1.2环境安装.html">
             
                     
                     1.2环境安装
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="1.3知识点思维导图.html">
+        <li class="chapter " data-level="1.2.3" data-path="../1.初识go语言/1.3知识点思维导图.html">
             
-                <a href="1.3知识点思维导图.html">
+                <a href="../1.初识go语言/1.3知识点思维导图.html">
             
                     
                     1.3知识点思维导图
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="1.4学习资料.html">
+        <li class="chapter " data-level="1.2.4" data-path="../1.初识go语言/1.4学习资料.html">
             
-                <a href="1.4学习资料.html">
+                <a href="../1.初识go语言/1.4学习资料.html">
             
                     
                     1.4学习资料
@@ -488,9 +488,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../7.go语言并发编程/basic.html">
+        <li class="chapter " data-level="1.8" data-path="basic.html">
             
-                <a href="../7.go语言并发编程/basic.html">
+                <a href="basic.html">
             
                     
                     7.go语言并发编程
@@ -502,9 +502,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../7.go语言并发编程/7.1_goroutine.html">
+        <li class="chapter " data-level="1.8.1" data-path="7.1_goroutine.html">
             
-                <a href="../7.go语言并发编程/7.1_goroutine.html">
+                <a href="7.1_goroutine.html">
             
                     
                     7.1_goroutine
@@ -515,9 +515,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../7.go语言并发编程/7.2_channel.html">
+        <li class="chapter active" data-level="1.8.2" data-path="7.2_channel.html">
             
-                <a href="../7.go语言并发编程/7.2_channel.html">
+                <a href="7.2_channel.html">
             
                     
                     7.2_channel
@@ -602,7 +602,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >1.2环境安装</a>
+        <a href=".." >7.2_channel</a>
     </h1>
 </div>
 
@@ -617,15 +617,133 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="12&#x73AF;&#x5883;&#x5B89;&#x88C5;">1.2&#x73AF;&#x5883;&#x5B89;&#x88C5;</h1>
+                                <h1 id="72channel">7.2_channel</h1>
+<p><img src="../assets/goroutine&#x901A;&#x9053;.png" alt="goroutine&#x901A;&#x9053;">
+<img src="../assets/channel.png" alt="channel"></p>
+<h2 id="1&#x3001;&#x5B9A;&#x4E49;&#xFF1A;">1&#x3001;&#x5B9A;&#x4E49;&#xFF1A;</h2>
+<h3 id="11-&#x7528;make&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;">1.1 &#x7528;make&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;</h3>
 <blockquote>
-<p>go:<a href="https://studygolang.com/dl" target="_blank">https://studygolang.com/dl</a></p>
-<p>ide&#x5DE5;&#x5177;&#x4E0B;&#x8F7D;GoLand&#xFF1A;<a href="https://www.jetbrains.com/go/download/download-thanks.html" target="_blank">https://www.jetbrains.com/go/download/download-thanks.html</a>
-&#x6FC0;&#x6D3B;&#x7801;&#xFF1A;<a href="https://blog.csdn.net/zhw0596/article/details/81394870" target="_blank">https://blog.csdn.net/zhw0596/article/details/81394870</a></p>
-<p>&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5E93; gopm&#x547D;&#x4EE4; &#x4E0B;&#x8F7D;google&#x65E0;&#x6CD5;&#x4E0B;&#x8F7D;&#x7684;&#x5305;:  <a href="https://gopm.io/" target="_blank">https://gopm.io/</a>
-&#x6D4B;&#x8BD5;&#x56FE;&#x5F62;&#x5316;&#x5DE5;&#x5177;&#xFF1A; <a href="https://www.graphviz.org/" target="_blank">https://www.graphviz.org/</a></p>
+<p>&#x65E0;&#x7F13;&#x51B2;&#x533A;&#xFF1A;make(chan Type)</p>
+<p>&#x6709;&#x7F13;&#x51B2;&#x533A;&#xFF1A;make(chan type,capacity)</p>
 </blockquote>
+<pre><code> func chanDemo1() {
+        c := make(chan int)
+        c &lt;- 1
+        c &lt;- 2
+        n := c
+        fmt.Println(n)
+    }
 
+    func chanDemo2() {
+        c := make(chan int)
+        go func() {
+            for  {
+                n := &lt;-c
+                fmt.Println(n)
+            }
+        }()
+        c &lt;- 1
+        c &lt;- 2
+    time.Sleep(time.Millisecond)
+    }
+
+
+
+    func main() {
+        //chanDemo1() //&#x62A5;&#x9519;&#xFF1A;all goroutines are asleep - deadlock!
+        chanDemo2() //&#x534F;&#x7A0B;&#x5904;&#x7406;
+</code></pre><p><img src="../assets/channel&#x5B9A;&#x4E49;.png" alt="channel&#x5B9A;&#x4E49;"></p>
+<h3 id="12&#x5B9E;&#x73B0;&#x540C;&#x6B65;">1.2&#x5B9E;&#x73B0;&#x540C;&#x6B65;</h3>
+<pre><code>//&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;channel
+var ch = make(chan int)
+
+//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6253;&#x5370;&#x673A;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6309;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x6253;&#x5370;
+//&#x6253;&#x5370;&#x673A;&#x5C5E;&#x4E8E;&#x516C;&#x5171;&#x8D44;&#x6E90;
+func Printer(str string) {
+    for _, data := range str {
+        fmt.Printf(&quot;%c&quot;, data)
+        time.Sleep(time.Second)
+    }
+    fmt.Printf(&quot;\n&quot;)
+}
+
+//person1&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x5230;person2&#x6267;&#x884C;
+func person1() {
+    Printer(&quot;hello&quot;)
+    ch &lt;- 666 //&#x7ED9;&#x7BA1;&#x9053;&#x5199;&#x6570;&#x636E;&#xFF0C;&#x53D1;&#x9001;
+}
+
+func person2() {
+    &lt;-ch //&#x4ECE;&#x7BA1;&#x9053;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x63A5;&#x6536;&#xFF0C;&#x5982;&#x679C;&#x901A;&#x9053;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x4ED6;&#x5C31;&#x4F1A;&#x963B;&#x585E;
+    Printer(&quot;world&quot;)
+}
+
+func main() {
+    //&#x65B0;&#x5EFA;2&#x4E2A;&#x534F;&#x7A0B;&#xFF0C;&#x4EE3;&#x8868;2&#x4E2A;&#x4EBA;&#xFF0C;2&#x4E2A;&#x4EBA;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x6253;&#x5370;&#x673A;
+    go person1()
+    go person2()
+
+    //&#x7279;&#x5730;&#x4E0D;&#x8BA9;&#x4E3B;&#x534F;&#x7A0B;&#x7ED3;&#x675F;&#xFF0C;&#x6B7B;&#x5FAA;&#x73AF;
+    for {
+
+    }
+}
+</code></pre><h3 id="13channel&#x65E0;&#x7F13;&#x5B58;">1.3channel&#x65E0;&#x7F13;&#x5B58;</h3>
+<p><img src="../assets/channel&#x65E0;&#x7F13;&#x5B58;.png" alt="channel&#x65E0;&#x7F13;&#x5B58;"></p>
+<h3 id="14channel&#x6709;&#x7F13;&#x5B58;">1.4channel&#x6709;&#x7F13;&#x5B58;</h3>
+<p><img src="../assets/channel&#x6709;&#x7F13;&#x5B58;.png" alt="channel&#x6709;&#x7F13;&#x5B58;"></p>
+<h3 id="15close">1.5close</h3>
+<p><img src="../assets/channel&#x5173;&#x95ED;.png" alt="channel&#x5173;&#x95ED;">
+&#x53D1;&#x9001;&#x65B9;&#x53BB;close</p>
+<h3 id="16&#x3001;range-&#x904D;&#x5386;">1.6&#x3001;range &#x904D;&#x5386;</h3>
+<h3 id="2&#x3001;csp&#x6A21;&#x578B;&#xFF1A;&#x4E0D;&#x8981;&#x901A;&#x8FC7;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x6765;&#x901A;&#x4FE1;&#xFF0C;&#x901A;&#x8FC7;&#x901A;&#x4FE1;&#x6765;&#x5171;&#x4EAB;&#x5185;&#x5B58;">2&#x3001;csp&#x6A21;&#x578B;&#xFF1A;&#x4E0D;&#x8981;&#x901A;&#x8FC7;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x6765;&#x901A;&#x4FE1;&#xFF0C;&#x901A;&#x8FC7;&#x901A;&#x4FE1;&#x6765;&#x5171;&#x4EAB;&#x5185;&#x5B58;</h3>
+<h3 id="3&#x3001;&#x5355;&#x9879;channel">3&#x3001;&#x5355;&#x9879;channel</h3>
+<pre><code>func main() {
+    //&#x521B;&#x5EFA;&#x4E00;&#x4E2A;channel, &#x53CC;&#x5411;&#x7684;
+    ch := make(chan int)
+
+    //&#x53CC;&#x5411;channel&#x80FD;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A;&#x5355;&#x5411;channel
+    var writeCh chan&lt;- int = ch //&#x53EA;&#x80FD;&#x5199;&#xFF0C;&#x4E0D;&#x80FD;&#x8BFB;
+    var readCh &lt;-chan int = ch  //&#x53EA;&#x80FD;&#x8BFB;&#xFF0C;&#x4E0D;&#x80FD;&#x5199;
+
+    writeCh &lt;- 666 //&#x5199;
+    //&lt;-writeCh //err,  invalid operation: &lt;-writeCh (receive from send-only type chan&lt;- int)
+
+    &lt;-readCh //&#x8BFB;
+    //readCh &lt;- 666 //&#x5199;&#xFF0C; err,  invalid operation: readCh &lt;- 666 (send to receive-only type &lt;-chan int)
+
+    //&#x5355;&#x5411;&#x65E0;&#x6CD5;&#x8F6C;&#x6362;&#x4E3A;&#x53CC;&#x5411;
+    //var ch2 chan int = writeCh //cannot use writeCh (type chan&lt;- int) as type chan int in assignment
+
+}
+</code></pre><h3 id="4&#x3001;&#x5E94;&#x7528;">4&#x3001;&#x5E94;&#x7528;</h3>
+<pre><code>//&#x6B64;&#x901A;&#x9053;&#x53EA;&#x80FD;&#x5199;&#xFF0C;&#x4E0D;&#x80FD;&#x8BFB;
+func producer(out chan&lt;- int) {
+    for i := 0; i &lt; 10; i++ {
+        out &lt;- i * i
+    }
+    close(out)
+}
+
+//&#x6B64;channel&#x53EA;&#x80FD;&#x8BFB;&#xFF0C;&#x4E0D;&#x80FD;&#x5199;
+func consumer(in &lt;-chan int) {
+    for num := range in {
+        fmt.Println(&quot;num = &quot;, num)
+    }
+}
+
+func main() {
+    //&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53CC;&#x5411;&#x901A;&#x9053;
+    ch := make(chan int)
+
+    //&#x751F;&#x4EA7;&#x8005;&#xFF0C;&#x751F;&#x4EA7;&#x6570;&#x5B57;&#xFF0C;&#x5199;&#x5165;channel
+    //&#x65B0;&#x5F00;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;
+    go producer(ch) //channel&#x4F20;&#x53C2;&#xFF0C;&#x5F15;&#x7528;&#x4F20;&#x9012;
+
+    //&#x6D88;&#x8D39;&#x8005;&#xFF0C;&#x4ECE;channel&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#xFF0C;&#x6253;&#x5370;
+    consumer(ch)
+}
+</code></pre>
                                 
                                 </section>
                             
@@ -652,12 +770,12 @@
 
             
                 
-                <a href="1.1语言介绍.html" class="navigation navigation-prev " aria-label="Previous page: 1.1语言介绍">
+                <a href="7.1_goroutine.html" class="navigation navigation-prev " aria-label="Previous page: 7.1_goroutine">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="1.3知识点思维导图.html" class="navigation navigation-next " aria-label="Next page: 1.3知识点思维导图">
+                <a href="../8.go语言网络概述、socket编程/basic.html" class="navigation navigation-next " aria-label="Next page: 8.go语言网络概述、socket编程">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -668,7 +786,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2环境安装","level":"1.2.2","depth":2,"next":{"title":"1.3知识点思维导图","level":"1.2.3","depth":2,"path":"1.初识go语言/1.3知识点思维导图.md","ref":"1.初识go语言/1.3知识点思维导图.md","articles":[]},"previous":{"title":"1.1语言介绍","level":"1.2.1","depth":2,"path":"1.初识go语言/1.1语言介绍.md","ref":"1.初识go语言/1.1语言介绍.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1.初识go语言/1.2环境安装.md","mtime":"2018-12-11T09:04:40.290Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-19T09:09:12.673Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.2_channel","level":"1.8.2","depth":2,"next":{"title":"8.go语言网络概述、socket编程","level":"1.9","depth":1,"path":"8.go语言网络概述、socket编程/basic.md","ref":"8.go语言网络概述、socket编程/basic.md","articles":[]},"previous":{"title":"7.1_goroutine","level":"1.8.1","depth":2,"path":"7.go语言并发编程/7.1_goroutine.md","ref":"7.go语言并发编程/7.1_goroutine.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"7.go语言并发编程/7.2_channel.md","mtime":"2018-12-12T08:02:55.261Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-19T09:09:12.673Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

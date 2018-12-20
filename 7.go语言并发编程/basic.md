@@ -1,5 +1,5 @@
 # 7.go语言并发编程
-
+Go语言实现了CSP(通信顺序进程，Communicating Sequential Process)
 ##1、并行和并发
      并发两个队列交替使用一个消费；--java
      并行两个队列两个消费--go

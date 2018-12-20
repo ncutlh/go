@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.2环境安装 · GitBook</title>
+        <title>3.1结构体 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1.3知识点思维导图.html" />
+    <link rel="next" href="3.2封装-包.html" />
     
-    
-    <link rel="prev" href="1.1语言介绍.html" />
     
 
     </head>
@@ -116,9 +114,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="1.1语言介绍.html">
+        <li class="chapter " data-level="1.2.1" data-path="../1.初识go语言/1.1语言介绍.html">
             
-                <a href="1.1语言介绍.html">
+                <a href="../1.初识go语言/1.1语言介绍.html">
             
                     
                     1.1语言介绍
@@ -129,9 +127,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="1.2环境安装.html">
+        <li class="chapter " data-level="1.2.2" data-path="../1.初识go语言/1.2环境安装.html">
             
-                <a href="1.2环境安装.html">
+                <a href="../1.初识go语言/1.2环境安装.html">
             
                     
                     1.2环境安装
@@ -142,9 +140,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="1.3知识点思维导图.html">
+        <li class="chapter " data-level="1.2.3" data-path="../1.初识go语言/1.3知识点思维导图.html">
             
-                <a href="1.3知识点思维导图.html">
+                <a href="../1.初识go语言/1.3知识点思维导图.html">
             
                     
                     1.3知识点思维导图
@@ -155,9 +153,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="1.4学习资料.html">
+        <li class="chapter " data-level="1.2.4" data-path="../1.初识go语言/1.4学习资料.html">
             
-                <a href="1.4学习资料.html">
+                <a href="../1.初识go语言/1.4学习资料.html">
             
                     
                     1.4学习资料
@@ -399,9 +397,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../3.go语言结构体/3.1结构体.html">
+        <li class="chapter active" data-level="1.4.1" data-path="3.1结构体.html">
             
-                <a href="../3.go语言结构体/3.1结构体.html">
+                <a href="3.1结构体.html">
             
                     
                     3.1结构体
@@ -412,9 +410,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../3.go语言结构体/3.2封装-包.html">
+        <li class="chapter " data-level="1.4.2" data-path="3.2封装-包.html">
             
-                <a href="../3.go语言结构体/3.2封装-包.html">
+                <a href="3.2封装-包.html">
             
                     
                     3.2封装-包
@@ -602,7 +600,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >1.2环境安装</a>
+        <a href=".." >3.1结构体</a>
     </h1>
 </div>
 
@@ -617,15 +615,117 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="12&#x73AF;&#x5883;&#x5B89;&#x88C5;">1.2&#x73AF;&#x5883;&#x5B89;&#x88C5;</h1>
-<blockquote>
-<p>go:<a href="https://studygolang.com/dl" target="_blank">https://studygolang.com/dl</a></p>
-<p>ide&#x5DE5;&#x5177;&#x4E0B;&#x8F7D;GoLand&#xFF1A;<a href="https://www.jetbrains.com/go/download/download-thanks.html" target="_blank">https://www.jetbrains.com/go/download/download-thanks.html</a>
-&#x6FC0;&#x6D3B;&#x7801;&#xFF1A;<a href="https://blog.csdn.net/zhw0596/article/details/81394870" target="_blank">https://blog.csdn.net/zhw0596/article/details/81394870</a></p>
-<p>&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5E93; gopm&#x547D;&#x4EE4; &#x4E0B;&#x8F7D;google&#x65E0;&#x6CD5;&#x4E0B;&#x8F7D;&#x7684;&#x5305;:  <a href="https://gopm.io/" target="_blank">https://gopm.io/</a>
-&#x6D4B;&#x8BD5;&#x56FE;&#x5F62;&#x5316;&#x5DE5;&#x5177;&#xFF1A; <a href="https://www.graphviz.org/" target="_blank">https://www.graphviz.org/</a></p>
-</blockquote>
+                                <h1 id="31&#x7ED3;&#x6784;&#x4F53;">3.1&#x7ED3;&#x6784;&#x4F53;</h1>
+<p>&#x4EC5;&#x652F;&#x6301;&#x5C01;&#x88C5;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x7EE7;&#x627F;&#x548C;&#x591A;&#x6001;
+&#x6CA1;&#x6709;class &#x53EA;&#x6709;struct</p>
+<h2 id="1&#x3001;&#x5B9A;&#x4E49;-type-&#x7C7B;&#x578B;&#x540D;-struct">1&#x3001;&#x5B9A;&#x4E49;: type &#x7C7B;&#x578B;&#x540D; struct{}</h2>
+<pre><code>type Student struct {
+   id   int
+   name string
+   sex  byte //&#x5B57;&#x7B26;&#x7C7B;&#x578B;
+   age  int
+   addr string
+}
+</code></pre><h3 id="11&#x3001;&#x7C7B;&#x578B;&#x5185;&#x5D4C;&#x548C;&#x7ED3;&#x6784;&#x5185;&#x5D4C;">1.1&#x3001;&#x7C7B;&#x578B;&#x5185;&#x5D4C;&#x548C;&#x7ED3;&#x6784;&#x5185;&#x5D4C;</h3>
+<pre><code>type Student struct {
+   int
+string
+}
+s :=&amp;Student{
+    int: 1,
+    string: &quot;aa&quot;
+}
+</code></pre><h3 id="1">1.</h3>
+<h2 id="2&#x3001;&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#xFF1A;">2&#x3001;&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#xFF1A;</h2>
+<pre><code>//&#x987A;&#x5E8F;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x5FC5;&#x987B;&#x521D;&#x59CB;&#x5316;
+ var s1 Student = Student{1, &quot;mike&quot;, &apos;m&apos;, 18, &quot;bj&quot;}
+ fmt.Println(&quot;s1 = &quot;, s1)
 
+ //&#x6307;&#x5B9A;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x81EA;&#x52A8;&#x8D4B;&#x503C;&#x4E3A;0
+ s2 := Student{name: &quot;mike&quot;, addr: &quot;bj&quot;}
+ fmt.Println(&quot;s2 = &quot;, s2)
+</code></pre><h2 id="3&#x3001;&#x6307;&#x9488;&#x521D;&#x59CB;&#x5316;&#xFF1A;">3&#x3001;&#x6307;&#x9488;&#x521D;&#x59CB;&#x5316;&#xFF1A;</h2>
+<pre><code>//&#x987A;&#x5E8F;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x5FC5;&#x987B;&#x521D;&#x59CB;&#x5316;, &#x522B;&#x5FD8;&#x4E86;&amp;
+var p1 *Student = &amp;Student{1, &quot;mike&quot;, &apos;m&apos;, 18, &quot;bj&quot;}
+fmt.Println(&quot;p1 = &quot;, p1)
+
+//&#x6307;&#x5B9A;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x81EA;&#x52A8;&#x8D4B;&#x503C;&#x4E3A;0
+p2 := &amp;Student{name: &quot;mike&quot;, addr: &quot;bj&quot;}
+fmt.Printf(&quot;p2 type is %T\n&quot;, p2)
+fmt.Println(&quot;p2 = &quot;, p2)
+</code></pre><h2 id="4&#x3001;&#x6210;&#x5458;&#x666E;&#x901A;&#x53D8;&#x91CF;">4&#x3001;&#x6210;&#x5458;&#x666E;&#x901A;&#x53D8;&#x91CF;</h2>
+<pre><code>   //&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x666E;&#x901A;&#x53D8;&#x91CF;
+    var s Student
+
+    //&#x64CD;&#x4F5C;&#x6210;&#x5458;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x70B9;(.)&#x8FD0;&#x7B97;&#x7B26;
+    s.id = 1
+    s.name = &quot;mike&quot;
+    s.sex = &apos;m&apos; //&#x5B57;&#x7B26;
+    s.age = 18
+    s.addr = &quot;bj&quot;
+    fmt.Println(&quot;s = &quot;, s)
+</code></pre><h2 id="5&#x3001;&#x6210;&#x5458;&#x6307;&#x9488;&#x53D8;&#x91CF;">5&#x3001;&#x6210;&#x5458;&#x6307;&#x9488;&#x53D8;&#x91CF;</h2>
+<pre><code>//1&#x3001;&#x6307;&#x9488;&#x6709;&#x5408;&#x6CD5;&#x6307;&#x5411;&#x540E;&#xFF0C;&#x624D;&#x64CD;&#x4F5C;&#x6210;&#x5458;
+    //&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;
+    var s Student
+    //&#x5728;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x53D8;&#x91CF;&#xFF0C;&#x4FDD;&#x5B58;s&#x7684;&#x5730;&#x5740;
+    var p1 *Student
+    p1 = &amp;s
+
+    //&#x901A;&#x8FC7;&#x6307;&#x9488;&#x64CD;&#x4F5C;&#x6210;&#x5458;  p1.id &#x548C;(*p1).id&#x5B8C;&#x5168;&#x7B49;&#x4EF7;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;.&#x8FD0;&#x7B97;&#x7B26;
+    p1.id = 1
+    (*p1).name = &quot;mike&quot;
+    p1.sex = &apos;m&apos;
+    p1.age = 18
+    p1.addr = &quot;bj&quot;
+    fmt.Println(&quot;p1 = &quot;, p1)
+
+    //2&#x3001;&#x901A;&#x8FC7;new&#x7533;&#x8BF7;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;
+    p2 := new(Student)
+    p2.id = 1
+    p2.name = &quot;mike&quot;
+    p2.sex = &apos;m&apos;
+    p2.age = 18
+    p2.addr = &quot;bj&quot;
+    fmt.Println(&quot;p2 = &quot;, p2)
+</code></pre><h2 id="6&#x3001;&#x7ED3;&#x6784;&#x4F53;&#x6BD4;&#x8F83;&#x548C;&#x8D4B;&#x503C;">6&#x3001;&#x7ED3;&#x6784;&#x4F53;&#x6BD4;&#x8F83;&#x548C;&#x8D4B;&#x503C;</h2>
+<pre><code>s1 := Student{1, &quot;mike&quot;, &apos;m&apos;, 18, &quot;bj&quot;}
+    s2 := Student{1, &quot;mike&quot;, &apos;m&apos;, 18, &quot;bj&quot;}
+    s3 := Student{2, &quot;mike&quot;, &apos;m&apos;, 18, &quot;bj&quot;}
+    fmt.Println(&quot;s1 == s2 &quot;, s1 == s2)
+    fmt.Println(&quot;s1 == s3 &quot;, s1 == s3)
+
+    //&#x540C;&#x7C7B;&#x578B;&#x7684;2&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x8D4B;&#x503C;
+    var tmp Student
+    tmp = s3
+    fmt.Println(&quot;tmp = &quot;, tmp)
+</code></pre><h2 id="7&#x3001;&#x6784;&#x4F53;&#x505A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#xFF1A;&#x503C;&#x4F20;&#x9012;&#x548C;&#x5730;&#x5740;&#x4F20;&#x9012;">7&#x3001;&#x6784;&#x4F53;&#x505A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#xFF1A;&#x503C;&#x4F20;&#x9012;&#x548C;&#x5730;&#x5740;&#x4F20;&#x9012;</h2>
+<h3 id="71&#x3001;&#x503C;&#x4F20;&#x9012;&#x51FD;&#x6570;&#x5916;&#x7684;&#x5BF9;&#x8C61;&#x503C;&#x4E0D;&#x53D8;&#xFF0C;copy&#x503C;">7.1&#x3001;&#x503C;&#x4F20;&#x9012;:&#x51FD;&#x6570;&#x5916;&#x7684;&#x5BF9;&#x8C61;&#x503C;&#x4E0D;&#x53D8;&#xFF0C;copy&#x503C;</h3>
+<pre><code>func test01(s Student) {
+   s.id = 666
+   fmt.Println(&quot;test01: &quot;, s)
+ }
+
+ func main01() {
+   s := Student{1, &quot;mike&quot;, &apos;m&apos;, 18, &quot;bj&quot;}
+
+   test01(s) //&#x503C;&#x4F20;&#x9012;&#xFF0C;&#x5F62;&#x53C2;&#x65E0;&#x6CD5;&#x6539;&#x5B9E;&#x53C2;
+   fmt.Println(&quot;main: &quot;, s)
+
+ }
+</code></pre><h3 id="72&#x3001;&#x5730;&#x5740;&#x4F20;&#x9012;">7.2&#x3001;&#x5730;&#x5740;&#x4F20;&#x9012;</h3>
+<pre><code>func test02(p *Student) {
+    p.id = 666
+}
+
+func main() {
+    s := Student{1, &quot;mike&quot;, &apos;m&apos;, 18, &quot;bj&quot;}
+
+    test02(&amp;s) //&#x5730;&#x5740;&#x4F20;&#x9012;&#xFF08;&#x5F15;&#x7528;&#x4F20;&#x9012;&#xFF09;&#xFF0C;&#x5F62;&#x53C2;&#x53EF;&#x4EE5;&#x6539;&#x5B9E;&#x53C2;
+    fmt.Println(&quot;main: &quot;, s)
+
+}
+</code></pre>
                                 
                                 </section>
                             
@@ -652,12 +752,8 @@
 
             
                 
-                <a href="1.1语言介绍.html" class="navigation navigation-prev " aria-label="Previous page: 1.1语言介绍">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="1.3知识点思维导图.html" class="navigation navigation-next " aria-label="Next page: 1.3知识点思维导图">
+                <a href="3.2封装-包.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 3.2封装-包">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -668,7 +764,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2环境安装","level":"1.2.2","depth":2,"next":{"title":"1.3知识点思维导图","level":"1.2.3","depth":2,"path":"1.初识go语言/1.3知识点思维导图.md","ref":"1.初识go语言/1.3知识点思维导图.md","articles":[]},"previous":{"title":"1.1语言介绍","level":"1.2.1","depth":2,"path":"1.初识go语言/1.1语言介绍.md","ref":"1.初识go语言/1.1语言介绍.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1.初识go语言/1.2环境安装.md","mtime":"2018-12-11T09:04:40.290Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-19T09:09:12.673Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1结构体","level":"1.4.1","depth":2,"next":{"title":"3.2封装-包","level":"1.4.2","depth":2,"path":"3.go语言结构体/3.2封装-包.md","ref":"3.go语言结构体/3.2封装-包.md","articles":[]},"previous":{"title":"3.go语言结构体","level":"1.4","depth":1,"ref":"","articles":[{"title":"3.1结构体","level":"1.4.1","depth":2,"path":"3.go语言结构体/3.1结构体.md","ref":"3.go语言结构体/3.1结构体.md","articles":[]},{"title":"3.2封装-包","level":"1.4.2","depth":2,"path":"3.go语言结构体/3.2封装-包.md","ref":"3.go语言结构体/3.2封装-包.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.go语言结构体/3.1结构体.md","mtime":"2018-12-11T08:48:32.336Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-19T09:09:12.673Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
