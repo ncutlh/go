@@ -365,7 +365,7 @@
       <workItem from="1545273936047" duration="2986000" />
       <workItem from="1545372520588" duration="1761000" />
       <workItem from="1547609021281" duration="2882000" />
-      <workItem from="1550118633656" duration="9000" />
+      <workItem from="1550118633656" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="结构体+函数">
       <created>1544517236319</created>
@@ -402,11 +402,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547610708038</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="并发线程">
+      <created>1550118645001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550118645001</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40131000" />
+    <option name="totallyTimeSpent" value="40144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="227" y="54" width="1453" height="827" extended-state="0" />
